@@ -1,0 +1,27 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{QUERY_STRING} ^(.*)$
+RewriteCond %{http_host} ^sem-cms.cn [NC]
+RewriteRule ^(.*)$ http://www.sem-cms.cn/$1 [L,R=301]
+
+RewriteRule  ^about/([0-9,a-z,A-Z,\s,-]*).html$  Template/Default/File/about\.php?ID=$1
+RewriteRule  ^contact.html$  Template/Default/File/contact\.php
+RewriteRule  ^search/$  Template/Default/File/search\.php
+RewriteRule  ^service/([0-9,a-z,A-Z,\s,-]*).html$  Template/Default/File/service\.php?ID=$1
+RewriteRule  ^blog/$  Template/Default/File/blog\.php
+RewriteRule  ^blog/([\d]*)/$ Template/Default/File/blog\.php?page=$1
+RewriteRule  ^blog/([0-9,a-z,A-Z,\s,-]*)/$  Template/Default/File/blog\.php?ID=$1
+RewriteRule  ^blog/([0-9,a-z,A-Z,\s,-]*)/([\d]*)/$  Template/Default/File/blog\.php?ID=$1&page=$2
+RewriteRule  ^blog/([0-9,a-z,A-Z,\s,-]*).html$  Template/Default/File/blogview\.php?ID=$1
+RewriteRule  ^product/$  Template/Default/File/product\.php
+RewriteRule  ^product/([\d]*)/$  Template/Default/File/product\.php?page=$1%1 [L,QSA] 
+RewriteRule  ^([0-9,a-z,A-Z,\s,-]*)/$  Template/Default/File/product\.php?ID=$1%1 [L,QSA] 
+RewriteRule  ^([0-9,a-z,A-Z,\s,-]*)/([\d]*)/$  Template/Default/File/product\.php?ID=$1&page=$2%1 [L,QSA] 
+RewriteRule  ^([0-9,a-z,A-Z,\s,-]*).html$  Template/Default/File/view\.php?ID=$1
+RewriteRule  ^shop/cart/$  Template/Default/File/shop_cart\.php
+RewriteRule  ^shop/check/$  Template/Default/File/shop_check\.php
+RewriteRule  ^shop/login/$  Template/Default/File/shop_login\.php
+RewriteRule  ^shop/user/$  Template/Default/File/shop_user\.php
+RewriteRule  ^shop/sucess/$  Template/Default/File/shop_sucess\.php 
+ErrorDocument 404 /Template/404.htm
+</IfModule>

@@ -1,0 +1,11 @@
+SEMCMS外贸网站商城管理系统(SCSHOP)
+
+SemCms外贸商城系统(以下简称：SCshop)是一套自主开发的开源网店(btc)系统，主要应用于零售批发线上销售产品，兼容IE、Firefox 、google、360 等主流浏览器,目前接入paypal,西联等支付系统，可按需求定制开发接入信用卡收款通道。
+SCshop架构：前端 Html5+DIV+CSS 后端：PHP+Mysql 配合Apache 可在 windows，liunx系统下运行。
+SCshop采用国际通用UTF-8编码编写。
+ 
+视频教程：https://www.sem-cms.cn/wenda/wd-8/
+官网地址：https://www.sem-cms.cn
+
+运行环境: PHP 5.6 + MySQL 5.6 + Apache 以上
+后台默认账号:Admin 密码:semcms

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>404</title>
+    <style>
+        @font-face{
+            font-family: "Montserrat";
+              src: local('Montserrat Regular'), local('Montserrat-Regular'), url(fonts/Montserrat.woff) format('woff');
+            font-style: normal;
+            font-weight: normal;
+        }
+        
+        *{ margin:0;padding:0;font-size: 14px;word-break: break-word;font-family: "Montserrat"; }
+        .lose{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            text-align: center;
+            width: 50%;
+            color: #333333;
+        }
+        .lose_bt{
+            font-size: 38px;
+            font-weight: bolder;
+            margin: 10px 0;
+        }
+        .lose_ms{
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .lose_a a{
+            font-size: 22px;
+            color: #f96d17;
+            border-bottom: 2px solid #f96d17;
+        }
+        .lose_a a:hover{
+            color: #0052ab;
+            border: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="lose">
+        <div><img src="/Images/default/404.png" alt=""></div>
+        <div class="lose_bt">Opps! This page Could Not Be Found!</div>
+        <div class="lose_ms">Sorry bit the page you are looking for does not exist, have been removed or name changed</div>
+        <div class="lose_a"><a href="/">Go To Homepage</a></div>
+        <script language="javascript" type="text/javascript">
+            setTimeout(function () { this.location.href = "/" }, 5000);
+</script>
+    </div>
+</body>
+</html>
